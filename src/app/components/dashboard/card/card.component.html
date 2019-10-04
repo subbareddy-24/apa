@@ -1,0 +1,29 @@
+<div class="card" *ngIf="!fileInfo.isFile">
+  <img class="card-img-top" src="assets/card-headers/default-card-header.JPG" alt="{{fileInfo.title}}">
+  <div class="card-header d-flex align-items-center">
+    <span class="title mr-auto">{{fileInfo.title}}</span>
+    <button mat-icon-button color="primary" *ngIf="fileInfo.hasChildren" (click)="fetchChildern(fileInfo.rootCode, fileInfo.id, fileInfo.hasChildren);"
+      matTooltip="View More Information" aria-label="View More Information">
+      <mat-icon>arrow_right_alt</mat-icon>
+    </button>
+  </div>
+  <div class="card-body">
+    <div class="button-row">
+      <button mat-icon-button color="accent" [matMenuTriggerFor]="settingsMenu" aria-label="Options" matTooltip="Options">
+        <mat-icon>settings</mat-icon> <!-- [inline]="true" to reduce the size -->
+      </button>
+      <mat-menu #settingsMenu="matMenu" yPosition="below" xPosition="before"> <!--[overlapTrigger]="false"-->
+        <button mat-menu-item (click)="openDialog();">
+          <mat-icon>edit</mat-icon>
+          <span>Edit</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>file_copy</mat-icon>
+          <span>Copy to clipboard</span>
+        </button>
+      </mat-menu>
+    </div>
+    <h5 class="card-title">{{fileInfo.name}}</h5>
+    <p class="card-text" [innerHTML]="fileInfo.description"></p>
+  </div>
+</div>

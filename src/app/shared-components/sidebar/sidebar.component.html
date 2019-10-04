@@ -1,0 +1,57 @@
+<!-- Sidebar Holder -->
+<div class="cgi-sidebar" [ngClass]="{
+    'active': isSideNavCollapsed
+  }">
+  <div class="sidebar-toggler">
+    <a tabindex="0" (click)="toggleCollapse();" (keydown.enter)="toggleCollapse();">
+      <i class="fa fa-chevron-circle-left"></i>
+    </a>
+  </div>
+  <!-- <div class="sidebar-header" (click)="goHome();">
+     <h4>
+      <i class="fa fa-dashboard"></i> Dashboard</h4> 
+  </div> -->
+  <ul class="list-unstyled components">
+    <!-- <li>
+      <a tabindex="0" href="#pncSubmenu" data-toggle="collapse" aria-expanded="false" class="drop-down-link dropdown-toggle active">
+        [ngClass]="{'active' : router.url.includes('/dashboard/COE')}"
+        <i class="fa fa-fw fa-book" aria-hidden="true"></i> PNC Bank
+        <span class="sr-only">PNC Bank</span>
+      </a>
+      <ul class="collapse show list-unstyled sub-menu" id="pncSubmenu" data-toggle="collapse" data-target="#navbarToggle.navbar-collapse.show">
+        <li [ngClass]="{'active' : router.url.includes('/dashboard/PNC')}">
+          <a href="#" routerLink="/dashboard/PNC">
+            <i class="fa fa-building" aria-hidden="true"></i> PNC Org Structure
+          </a>
+        </li>
+      </ul>
+    </li> -->
+    <li>
+      <!-- <a tabindex="0" href="#coeSubmenu" data-toggle="collapse" aria-expanded="false" class="drop-down-link dropdown-toggle active">
+        [ngClass]="{'active' : router.url.includes('/dashboard/COE')}"
+        <i class="fa fa-fw fa-book" aria-hidden="true"></i> Center of Excellence
+        <span class="sr-only">Center of Excellence</span>
+      </a> -->
+      <ul class="collapse show list-unstyled sub-menu" id="coeSubmenu" data-toggle="collapse" data-target="#navbarToggle.navbar-collapse.show">
+        <li [ngClass]="{'active' : router.url.includes('/dashboard/COE/1')}">
+          <a href="#" routerLink="/dashboard/COE/1">
+            <i class="fa fa-building" aria-hidden="true"></i> Directory Search
+
+          </a>
+        </li>
+        <li [ngClass]="{'active' : router.url.includes('/dashboard/COE/2')}">
+          <a href="#" routerLink="/dashboard/COE/2">
+            <i class="fa fa-university" aria-hidden="true"></i> Detail Search
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <!-- <ul class="list-unstyled CTAs">
+    <li>
+      <a routerLink="/contactus" class="article">Contact Us
+        <span class="sr-only">Contact Us</span>
+      </a>
+    </li>
+  </ul> -->
+</div>

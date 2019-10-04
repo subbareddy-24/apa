@@ -1,0 +1,9 @@
+<nav aria-span="breadcrumb" class="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" [ngClass]="{'active': last}" *ngFor="let breadcrumbItem of breadcrumb;let last = last;">
+      <a tabindex="0" (keydown.enter)="navigate(breadcrumbItem);" (click)="navigate(breadcrumbItem);" *ngIf="!last">{{breadcrumbItem.title}}</a>
+      <span *ngIf="last">{{breadcrumbItem.title}}</span>
+      <span class="sr-only">{{breadcrumbItem.url}}</span>
+    </li>
+  </ol>
+</nav>

@@ -1,0 +1,53 @@
+<div class="main-section" [ngClass]="{'open-more' : isOpened, 'expanded' : expanded}">
+	<div class="row border-chat">
+		<div class="col-md-12 col-sm-12 col-xs-12 first-section">
+			<div class="row">
+				<div tabindex="0" (keydown.enter)="isOpened=!isOpened;" (click)="isOpened=!isOpened;" class="col-6 left-first-section">
+					<p>Chat with Us</p>
+				</div>
+				<div class="col-6 right-first-section">
+					<a role="button" tabindex="0" (keydown.enter)="isOpened=false;" (click)="isOpened=false;" title="Minimize">
+						<i class="fa fa-minus" aria-hidden="true"></i>
+					</a>
+					<a role="button" tabindex="0" (keydown.enter)="isOpened=true;expanded=!expanded;" (click)="isOpened=true;expanded=!expanded;">
+						<i class="fa {{expanded ? 'fa-clone' : 'fa-window-maximize'}}" aria-hidden="true" title="{{expanded ? 'Restore' : 'Maximize'}}"></i>
+					</a>
+					<a role="button" tabindex="0" (keydown.enter)="isOpened=false;messages=[];" (click)="isOpened=false;messages=[];" title="Close and Clear Chat">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row border-chat">
+		<div class="col-md-12 col-sm-12 col-xs-12 second-section" [ngClass]="{'expanded' : expanded}">
+			<div tabindex="0" class="chat-section" [ngClass]="{'expanded' : expanded}" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+				<ul>
+					<li *ngFor="let message of messages; let i = index;">
+						<div [ngClass]="{'right-chat' : message.userId != 2, 'left-chat' : message.userId == 2}">
+							<img style="border-radius: 50%;" src="{{message.userId != 2 ? 'assets/image/1499345471_boy.png' : 'assets/image/bot.jpg'}}">
+							<p>
+								{{message.message}}
+								<span>{{message.time}}</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row border-chat">
+		<div class="col-md-12 col-sm-12 col-xs-12 third-section pr-0">
+			<div class="text-bar">
+				<input type="text" autofocus [readonly]="connecting" placeholder="Write messege" 
+					#msgInput (keydown.enter)="connect(msgInput.value);false;msgInput.value='';">
+				<a role="button" title="Send" tabindex="0" 
+					(click)="connect(msgInput.value);msgInput.value='';"
+					(keydown.enter)="connect(msgInput.value);msgInput.value='';"
+					>
+					<i class="fa fa-arrow-right" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

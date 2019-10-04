@@ -1,0 +1,48 @@
+@import '_variables';
+.cgi-app {
+    .main-content-wrapper {
+        position: fixed;
+        top: 70px;
+        width: 100vw;
+        perspective: 1500px;
+        /* ---------------------------------------------------
+        CONTENT STYLE
+        ----------------------------------------------------- */
+        .content-wrapper {
+            position: relative;
+            padding: 20px;
+            margin-left: 6px;
+            margin-right: 6px;
+            min-width: calc(100vw - 285px);
+            min-height: calc(100vh - 70px);
+            max-height: calc(100vh - 70px);
+            background-color: $background-color-secondary;
+            overflow: auto;
+            transition: all 0.3s;
+        }
+        /* ---------------------------------------------------
+        MEDIAQUERIES
+        ----------------------------------------------------- */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                position: fixed;
+                top: 0;
+                left: 0;
+                padding: 0;
+                overflow-x: initial;
+                min-width: calc(100vw -8px);
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+        }
+        @media (max-width: 440px) {
+            .content-wrapper {
+                padding: 0;
+                overflow-x: initial;
+                min-width: calc(100vw);
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    }
+}

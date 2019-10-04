@@ -1,0 +1,40 @@
+<div>
+  <h6>Checkbox</h6>
+  <mat-checkbox></mat-checkbox>
+</div>
+<div>
+  <h6>Date Picker</h6>
+  <mat-form-field>
+    <input matInput [matDatepicker]="myDatepicker">
+    <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+    <mat-datepicker #myDatepicker></mat-datepicker>
+  </mat-form-field>
+  <h6>Date Picker with Custom ICON</h6>
+  <mat-form-field class="example-full-width">
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker">
+      <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</div>
+<div>
+    <h6>Auto Complete with filrer</h6>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
+</div>
+<div>
+    <button mat-button color="primary">
+        <mat-icon>folder</mat-icon>
+        <mat-icon>mic</mat-icon>
+        Start Recording
+    </button>
+</div>

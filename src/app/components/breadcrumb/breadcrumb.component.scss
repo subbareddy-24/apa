@@ -1,0 +1,17 @@
+@import "_variables";
+nav.breadcrumb {
+    // box-shadow: 3px 5px #d3d3d3a1;
+}
+.breadcrumb {
+    // backface-visibility: hidden;
+    // position: sticky;
+    // top: 0;
+    // z-index: 10;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0;
+    background-color: white;
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

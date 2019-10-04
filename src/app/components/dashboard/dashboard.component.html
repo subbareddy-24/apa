@@ -1,0 +1,21 @@
+<div class="cgi-dashboard" #scrollDashboard [scrollTop]="scrollDashboard.scrollTop">
+  <cgi-breadcrumb [breadcrumb]="breadcrumb"></cgi-breadcrumb>
+  <div class="cards">
+    <cgi-card *ngFor="let fileInfo of filteredFileInfo.projectInfo; let i = index" [fileInfo]="fileInfo" (open)="loadChildern($event)"></cgi-card>
+  </div>
+  <div class="file-section" *ngIf="filteredFileInfo?.fileInfo?.length > 0">
+    <h4 class="w-100">
+      Reference Files:
+    </h4>
+    <a *ngFor="let fileInfo of filteredFileInfo.fileInfo; let i = index" href="/assets/{{fileInfo.id}}/{{fileInfo.fileName}}"
+      target="_blank">
+      <div class="files">
+        <img src="/assets/file-icons/{{getFileIcon(fileInfo.fileName)}}" alt="{{fileInfo.fileName}}" />
+        <span>{{fileInfo.fileName}}</span>
+      </div>
+    </a>
+  </div>
+  <div class="file-section" *ngIf="filteredFileInfo?.projectInfo?.length == 0 && filteredFileInfo?.fileInfo?.length == 0">
+    <h4>No data found.</h4>
+  </div>
+</div>

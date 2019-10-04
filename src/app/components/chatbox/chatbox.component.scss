@@ -1,0 +1,171 @@
+.main-section {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    position: fixed;
+    right: 10px;
+    bottom: -350px;
+    width: 300px;
+    transition: 1.5s;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @media screen and (min-width: 576px) {
+        right: 30px;
+        &.expanded {
+            bottom: -500px;
+            width: 400px;
+            transition: 1.5s;
+        }
+    }
+    &.open-more {
+        bottom: 0px;
+        transition: 1.5s;
+        @media screen and (min-width: 576px) {
+            &.expanded {
+                bottom: 0px;
+                width: 400px;
+            }
+        }
+    }
+    .first-section:hover {
+        cursor: pointer;
+    }
+    .border-chat {
+        border: 1px solid #a00331;
+        margin: 0px;
+    }
+    .first-section {
+        background-color: #cc1033;
+    }
+    .first-section p {
+        color: #fff;
+        margin: 0px;
+        padding: 10px 0px;
+    }
+    .first-section p:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+    .left-first-section {
+        padding-left: 10px;
+    }
+    .right-first-section {
+        text-align: right;
+        padding-right: 10px;
+    }
+    .right-first-section i {
+        color: #fff;
+        font-size: 15px;
+        padding: 12px 3px;
+    }
+    .right-first-section i:hover {
+        color: #fff;
+    }
+    .chat-section ul li {
+        list-style: none;
+        margin-top: 10px;
+        position: relative;
+    }
+    .chat-section {
+        overflow-y: scroll;
+        height: 300px;
+        transition: 1.5s;
+        @media screen and (min-width: 576px) {
+            &.expanded {
+                transition: 1.5s;
+                height: 450px;
+            }
+        }
+    }
+    .chat-section ul {
+        padding: 0px;
+    }
+    .left-chat img,
+    .right-chat img {
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin: 0px 10px;
+    }
+    .right-chat img {
+        float: right;
+    }
+    .second-section {
+        padding: 0px;
+        margin: 0px;
+        background-color: #F3F3F3;
+        height: 300px;
+        transition: 1.5s;
+        @media screen and (min-width: 576px) {
+            &.expanded {
+                transition: 1.5s;
+                height: 450px;
+            }
+        }
+    }
+    .left-chat,
+    .right-chat {
+        overflow: hidden;
+    }
+    .left-chat p,
+    .right-chat p {
+        background-color: #cc1033;
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+        float: left;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .left-chat span,
+    .right-chat span {
+        position: absolute;
+        right: 43px;
+        bottom: 0;
+        color: #B7BCC5;
+    }
+    .right-chat span {
+        left: 45px;
+    }
+    .right-chat p {
+        float: right;
+        background-color: #FFFFFF;
+        color: #cc1033;
+    }
+    .third-section {
+        border-top: 1px solid #EEEEEE;
+        background-color: #FFFFFF;
+    }
+    .text-bar input {
+        width: 90%;
+        margin-left: -15px;
+        padding: 10px 10px;
+        border: 1px solid #fff;
+    }
+    .text-bar a i {
+        background-color: #cc1033;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        padding: 7px 0px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .left-chat:before {
+        content: " ";
+        position: absolute;
+        top: 0px;
+        left: 55px;
+        bottom: 150px;
+        border: 15px solid transparent;
+        border-top-color: #cc1033;
+    }
+    .right-chat:before {
+        content: " ";
+        position: absolute;
+        top: 0px;
+        right: 55px;
+        bottom: 150px;
+        border: 15px solid transparent;
+        border-top-color: #fff;
+    }
+}

@@ -1,0 +1,19 @@
+@import '_variables';
+.cgi-header-navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 9;
+    .navbar {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cgi-header-navbar {
+        background-color: $background-color-primary;
+    }
+}
+.navbar-dark .navbar-nav .nav-link {
+    padding-left: 35.5rem;
+}

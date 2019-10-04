@@ -1,0 +1,83 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$cgi-primary: (
+    50: #f44b76,
+    100: #f33263,
+    200: #f11a51,
+    300: #e40e44,
+    400: #cc0c3d,
+    500: #b40b36,
+    600: #9c0a2f,
+    700: #840828,
+    800: #6c0720,
+    900: #540519,
+    A100: #f56388,
+    A200: #f77b9a,
+    A400: #f893ad,
+    A700: #3c0412,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #0a0a0a,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+$cgi-accent: (
+    50: #515151,
+    100: #5e5e5e,
+    200: #6b6b6b,
+    300: #787878,
+    400: #848484,
+    500: #919191,
+    600: #ababab,
+    700: #b7b7b7,
+    800: #c4c4c4,
+    900: #d1d1d1,
+    A100: #ababab,
+    A200: #9e9e9e,
+    A400: #919191,
+    A700: #dedede,
+    contrast: (
+        50 : #ffffff,
+        100 : #ffffff,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+$cgi-app-primary: mat-palette($cgi-primary);
+$cgi-app-accent : mat-palette($cgi-accent);
+// The warn palette is optional (defaults to red).
+$cgi-app-warn : mat-palette($mat-red);
+// Create the theme object (a Sass map containing all of the palettes).
+$cgi-app-theme: mat-light-theme($cgi-app-primary, $cgi-app-accent, $cgi-app-warn);
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($cgi-app-theme);

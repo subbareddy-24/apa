@@ -1,0 +1,40 @@
+<div class="cgi-header-navbar">
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <!-- Sidebar Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbarToggle.navbar-collapse.show"
+      aria-controls="sidebarToggle" aria-expanded="false" aria-span="Toggle Side Navigation" (click)="toggleSidebar();">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" routerLink="/dashboard/COE" data-toggle="collapse" data-target="#headerNavbarToggle.navbar-collapse.show">
+      <img src="assets/images/CGI.png" width="70" height="43" alt="">
+    </a>
+    <!-- Topnav Toggler-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbarToggle" aria-controls="navbarText"
+      aria-expanded="false" aria-span="Toggle navigation" (click)="toggleSidebar('close');">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="headerNavbarToggle">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <h2><a class="nav-link" routerLink="/dashboard/COE" data-toggle="collapse" data-target="#headerNavbarToggle.navbar-collapse.show">APA Invoice
+            <span class="sr-only">APA Invoice</span> 
+          </a></h2>
+        </li>
+      </ul>
+      <!-- <ul class="navbar-nav navbar-right">
+        <li class="nav-item"><a href="#" class="nav-link">Dashboard<span class="sr-only">Dashboard</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Settings<span class="sr-only">Settings</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Profile<span class="sr-only">Profile</span></a></li>
+        <li class="nav-item"><a href="#" class="nav-link help">Help<span class="sr-only">Help</span></a></li>
+      </ul> -->
+      <!-- <form class="navbar-form navbar-right">
+        <div class="input-group">
+          <input type="search" class="form-control border-white" placeholder="Search for..." aria-span="Search">
+          <button class="input-group-btn btn btn-cgi no-border-radious-left no-background" type="button" data-toggle="collapse" data-target="#headerNavbarToggle.navbar-collapse.show">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </form> -->
+    </div>
+  </nav>
+</div>

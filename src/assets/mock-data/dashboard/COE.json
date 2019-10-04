@@ -1,0 +1,340 @@
+{
+    "files": [
+        {
+            "id": 1,
+            "rootCode": "COE",
+            "title": "Center of Excellence",
+            "name": "Corporate Banking",
+            "description": "Corporate banking is defined as custom-tailored financing and banking services for corporations. Corporate banking, also known as business banking, refers to the aspect of banking that deals with corporate customers Corporate banking is typically offered by commercial banks, and entails all the services that can be extended on a financial level to corporate entities to ease day-to-day operations.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": null,
+            "hasChildren": true
+        },
+        {
+            "id": 101,
+            "rootCode": "COE",
+            "title": "What is Corporate Banking ?",
+            "name": "Corporate Banking",
+            "description": "Corporate banking is defined as custom-tailored financing and banking services for corporations. Corporate banking, also known as business banking, refers to the aspect of banking that deals with corporate customers Corporate banking is typically offered by commercial banks, and entails all the services that can be extended on a financial level to corporate entities to ease day-to-day operations.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 1,
+            "hasChildren": false
+        },
+        {
+            "id": 102,
+            "rootCode": "COE",
+            "name": "Corporate Banking-Functional Diagram",
+            "title": "Corporate Banking",
+            "description": "<img class=\"zoomable\" width=\"100%\" height=\"200\" src=\"/assets/images/CorporateBanking.JPG\">",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 1,
+            "hasChildren": false
+        },
+        {
+            "id": 103,
+            "rootCode": "COE",
+            "name": "Products & Services Offered",
+            "title": "Corporate Banking",
+            "description": "<ul><li>Loans and other credit products</li><li>Treasury and cash management services</li><li>Equipment lending</li><li>Commercial real estate</li><li>Trade finance</li><li>Employer services</li></ul>",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 1,
+            "hasChildren": true
+        },
+        {
+            "id": 1001,
+            "rootCode": "COE",
+            "name": "Loans and other credit products",
+            "title": "Products & Services Offered",
+            "description": "This is typically the biggest area of business within corporate banking, and as noted earlier, one of the biggest sources of profit and risk for a bank.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 103,
+            "hasChildren": false
+        },
+        {
+            "id": 1002,
+            "rootCode": "COE",
+            "name": "Treasury and Cash Management Services",
+            "title": "Products & Services Offered",
+            "description": "Used by companies for managing their working capital and currency conversion requirements",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 103,
+            "hasChildren": false
+        },
+        {
+            "id": 1003,
+            "rootCode": "COE",
+            "name": "Equipment Lending",
+            "title": "Products & Services Offered",
+            "description": "Commercial banks structure customized loans and leases for a range of equipment used by companies in diverse sectors such as manufacturing, transportation and information technology.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 103,
+            "hasChildren": false
+        },
+        {
+            "id": 1004,
+            "rootCode": "COE",
+            "name": "Commercial Real Estate",
+            "title": "Products & Services Offered",
+            "description": "Services offered by banks in this area include real asset analysis, portfolio evaluation, and debt and equity structuring.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 103,
+            "hasChildren": false
+        },
+        {
+            "id": 1005,
+            "rootCode": "COE",
+            "name": "Trade Finance",
+            "title": "Products & Services Offered",
+            "description": "Involves letters of credit, bill collection and factoring.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 103,
+            "hasChildren": false
+        },
+        {
+            "id": 1006,
+            "rootCode": "COE",
+            "name": "Employer Services",
+            "title": "Products & Services Offered",
+            "description": "Services such as payroll and group retirement plans are typically offered by specialized affiliates of a bank.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 103,
+            "hasChildren": false
+        },
+        {
+            "id": 104,
+            "rootCode": "COE",
+            "name": "Major Corporate Banks across the globe",
+            "title": "Corporate Banking",
+            "description": "<ul><li>JPMorgan Chase.</li><li>Wells Fargo.</li><li>Bank of America.</li><li>Citigroup.</li><li>U.S. Bancorp.</li></ul>",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 1,
+            "hasChildren": false
+        },
+        {
+            "id": 105,
+            "rootCode": "COE",
+            "isFile": true,
+            "fileName": "C & IB COE.pptx",
+            "parentId": 1
+        },
+        {
+            "id": 2,
+            "rootCode": "COE",
+            "title": "Center of Excellence",
+            "name": "Institutional Banking",
+            "description": "Institutional Banking is a specialized division within a bank that offers a comprehensive suite of products and services for large institutions both locally and abroad. In particular they can provide complex financing and advisory functions for corporate and government clients who may require tailored capital products.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": null,
+            "hasChildren": true
+        },
+        {
+            "id": 20,
+            "rootCode": "COE",
+            "name": "What is Institutional Banking?",
+            "title": "Institutional Banking",
+            "description": "Institutional Banking is a specialized division within a bank that offers a comprehensive suite of products and services for large institutions both locally and abroad. In particular they can provide complex financing and advisory functions for corporate and government clients who may require tailored capital products.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 2,
+            "hasChildren": false
+        },
+        {
+            "id": 21,
+            "rootCode": "COE",
+            "name": "Example of Institutional Banking",
+            "title": "Institutional Banking",
+            "description": "Institutional banking usually incorporates services such as evaluating mergers & acquisitions, investments and divestments, managing treasuries etc. Institutional banking helps clients to create corporate strategies and develop opportunities for growth on a national and global level. Institutional banking provides clients with expertise, research analysis and result-based methodologies that enable them to make sound financial decisions, suited to their business environment",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 2,
+            "hasChildren": false
+        },
+        {
+            "id": 22,
+            "rootCode": "COE",
+            "name": "Major Corporate Banks across the globe",
+            "title": "Institutional Banking",
+            "description": "<ul><li>JPMorgan Chase.</li><li>Goldman Sachs.</li><li>Bank of America Merrill Lynch.</li><li>Morgan Stanley.</li><li>Citi Group</li><li>Credit Suisse.</li><li>Barclays Investment Bank.</li><li>Deutsche Bank.</li></ul>",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 2,
+            "hasChildren": false
+        },
+        {
+            "id": 3,
+            "rootCode": "COE",
+            "title": "Center of Excellence",
+            "name": "Retail Banking",
+            "description": "Retail banking also known as Consumer Banking is the provision of services by a bank to individual consumers, rather than to companies, corporations or other banks.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": null,
+            "hasChildren": true
+        },
+        {
+            "id": 30,
+            "rootCode": "COE",
+            "name": "What is Retail Banking",
+            "title": "Retail Banking",
+            "description": "Retail banking also known as Consumer Banking is the provision of services by a bank to individual consumers, rather than to companies, corporations or other banks.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 3,
+            "hasChildren": true
+        },
+        {
+            "id": 301,
+            "rootCode": "COE",
+            "name": "Products offered",
+            "title": "Retail Banking",
+            "description": "<ol><li>Saving Accounts</li><li>Current Accounts </li><li>Debit Cards</li><li>Credit Cards</li><li>ATM Cards</li><li>Travelers Cheques</li><li>Mortgages</li><li>Term Deposits</li><li>Personal Loans</li></ol>",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 30,
+            "hasChildren": false
+        },
+        {
+            "id": 302,
+            "rootCode": "COE",
+            "name": "Services offered",
+            "title": "Retail Banking",
+            "description": "<ol><li>Saving Accounts</li><li>Loans – Mortgages, Personal, Studies, Vehicles etc.,</li><li>Debit cards</li><li>Credit cards</li><li>Safe deposit vaults/lockers</li><li>ATM Cards</li><li>FX transactions</li><li>Facility for bills payments</li><li>Facility for issuing demand drafts</li><li>Wealth Management</li></ol>",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 30,
+            "hasChildren": false
+        },
+        {
+            "id": 303,
+            "rootCode": "COE",
+            "name": "Sub category in Retail / Consumer Banking",
+            "title": "Retail Banking",
+            "description": "<ol><li>Private banks</li><li>Community development banks</li><li>Postal savings banks</li><li>Credit cards</li></ol>",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 30,
+            "hasChildren": false
+        },
+        {
+            "id": 31,
+            "rootCode": "COE",
+            "name": "Landscape of Retail Banking",
+            "title": "Retail Banking",
+            "description": "<img class=\"zoomable\" src=\"/assets/images/RetailBanking.JPG\" alt=\"Landscape of Retail Banking\" width=\"100%\" height=\"200\">",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 3,
+            "hasChildren": false
+        },
+        {
+            "id": 32,
+            "rootCode": "COE",
+            "isFile": true,
+            "fileName": "Retail Banking.pptx",
+            "parentId": 3
+        },
+        {
+            "id": 4,
+            "rootCode": "COE",
+            "name": "Risk Analytics (RA)",
+            "title": "Center of Excellence",
+            "description": "It is the study of the underlying uncertainty of a given course of action. By using analytics to measure, quantify, and predict risk, leaders can rely less on intuition and create a consistent methodology steeped in data-driven insights",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": null,
+            "hasChildren": true
+        },
+        {
+            "id": 40,
+            "rootCode": "COE",
+            "name": "What is Risk Analytics",
+            "title": "Risk Analytics",
+            "description": "It is the study of the underlying uncertainty of a given course of action. By using analytics to measure, quantify, and predict risk, leaders can rely less on intuition and create a consistent methodology steeped in data-driven insights",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 4,
+            "hasChildren": false
+        },
+        {
+            "id": 41,
+            "rootCode": "COE",
+            "name": "What is Risk Management?",
+            "title": "Risk Management",
+            "description": "Risk Management is the Identification, Analysis and Economic Control of those risks which can threaten the Assets (Property, Human) or the earning Capacity of an Enterprise.",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 4,
+            "hasChildren": false
+        },
+        {
+            "id": 42,
+            "rootCode": "COE",
+            "name": "Types of Risk",
+            "title": "Risk",
+            "description": "<ul><li>Operational Risk</li><li>Credit Risk</li><li>Market Risk</li><li>Business Event Risk</li><li>Inflation Risk</li><li>Liquidity Risk</li><li>Political Risk</li><li>Reinvestment Risk</li></ul> <div><img class=\"zoomable\" src=\"/assets/images/FinnacilRisks.JPG\"  width=\"100%\" height=\"100\"></div> <div><img class=\"zoomable\" src=\"/assets/images/HierarchyFinRisk.JPG\"  width=\"100%\" height=\"100\"></div>",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 4,
+            "hasChildren": true
+        },
+        {
+            "id": 401,
+            "rootCode": "COE",
+            "name": "Credit Risk",
+            "title": "Types of Risk",
+            "description": "<ul><li>When there is a counterparty failure in performing the repayment obligation on due date, it gives rise to credit risk.</li><li>Credit risk is inherent part of any firm that is into business of lending funds. </li></ul>",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 42,
+            "hasChildren": false
+        },
+        {
+            "id": 402,
+            "rootCode": "COE",
+            "name": "Market Risk",
+            "title": "Types of Risk",
+            "description": "<ul><li>Market risk is the risk of value of a firm’s investment going down as a result of market movement. It is also referred as price risk or systematic risk</li><li>Market risk cannot be distinctly separate from other risk. It results from interplay of other risks </li><li>Interest rate risk and exchange rate risk contribute the most to the presence of marker risk.</li></ul>",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 42,
+            "hasChildren": false
+        },
+        {
+            "id": 402,
+            "rootCode": "COE",
+            "name": "Operational Risk",
+            "title": "Types of Risk",
+            "description": "<ul><li>This risk results from inadequate or failed internal processes/people/systems or from external events</li><li>Operational risk can be summarized as human risk; it is the risk of business operations failing due to human error. Operational risk will change from industry to industry, and is an important consideration to make when looking at potential investment decisions. Industries with lower human interaction are likely to have lower operational risk </li></ul>",
+            "logo": "cgi-red.png",
+            "isFile": false,
+            "parentId": 42,
+            "hasChildren": false
+        },
+        {
+            "id": 43,
+            "rootCode": "COE",
+            "isFile": true,
+            "fileName": "Risk Analyticts.pptx",
+            "parentId": 4
+        },
+        {
+            "id": 5,
+            "rootCode": "COE",
+            "isFile": true,
+            "fileName": "Common Phrases & Terms.docx",
+            "parentId": null
+        }
+    ]
+}

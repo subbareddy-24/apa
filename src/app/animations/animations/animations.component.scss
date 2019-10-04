@@ -1,0 +1,15 @@
+&.shadow {
+    -webkit-animation: movingshadow 1s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: movingshadow 2s infinite;
+}
+@-webkit-keyframes movingshadow {
+    50% {
+        box-shadow: 5px 10px 20px $color-primary;
+    }
+}
+@keyframes movingshadow {
+    50% {
+        box-shadow: 5px 10px 20px $color-primary;
+    }
+}
