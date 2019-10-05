@@ -1,5 +1,89 @@
-<mat-form-field>
-  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-  <mat-datepicker #picker></mat-datepicker>
-</mat-form-field>
+<table>
+  <tr>
+    <td>
+      <mat-checkbox></mat-checkbox>
+    </td>
+    <td style="padding-left: 40px">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="From date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </td>
+    <td style="padding-left: 10px">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker1" placeholder="To date">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-checkbox></mat-checkbox>
+    </td>
+    <td style="padding-left: 40px">
+      <mat-form-field>
+        <input matInput placeholder="text">
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-checkbox></mat-checkbox>
+    </td>
+    <td style="padding-left: 40px">
+      <mat-form-field>
+        <input matInput placeholder="text1">
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-checkbox></mat-checkbox>
+    </td>
+    <td style="padding-left: 40px"> 
+      <mat-form-field>
+        <input matInput placeholder="text2">
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-checkbox></mat-checkbox>
+    </td>
+    <td style="padding-left: 40px">
+      <mat-form-field>
+        <mat-select >
+          <mat-option *ngFor="let st of status" [value]="st.value">{{st.viewValue}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </td>
+  </tr>
+</table>
+<br>
+<div>
+    <ngx-datatable
+        #table
+        class="material"
+        [columns]="columns"
+        [headerHeight]="50"
+        [footerHeight]="50"
+        rowHeight="auto"
+        [limit]="10"
+        [rows]="rows"
+      >
+      <ngx-datatable-column name="Name">
+          <ng-template let-row="row" ngx-datatable-cell-template>
+             <a href="#">{{row.name}}</a> 
+            </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="Gender">
+
+      </ngx-datatable-column>
+      <ngx-datatable-column name="Company">
+
+      </ngx-datatable-column>
+      </ngx-datatable>
+
+  </div>

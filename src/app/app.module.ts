@@ -19,7 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
 // Components
 import { CardComponent } from './components/dashboard/card/card.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
-
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 // Shared Components
 import { HeaderNavbarComponent } from './shared-components/header-navbar/header-navbar.component';
 import { SidebarComponent } from './shared-components/sidebar/sidebar.component';
@@ -75,6 +75,7 @@ import { FormComponent } from './form/form.component';
     FlexLayoutModule,
     AngularFileUploaderModule,
     CKEditorModule,
+    NgxDatatableModule,
     // NgbModule.forRoot(),
     AppRoutingModule
   ],
